@@ -1,0 +1,42 @@
+@function get-color($base, $hue, $saturation, $lightness) {
+	@if saturation($base) > 0 {
+		$ndegree: (hue($base) % 120) - 60;
+		$angle: abs($ndegree);
+		@if $ndegree < 0 {
+			$hue: min(max($hue, $angle - 60), $angle);
+		} @else {
+			$hue: min(max(-$hue, -$angle), 60 - $angle);
+		}
+	} @else {
+		$saturation: 0%;
+	}
+	@return adjust-color($base, $hue: $hue, $saturation: $saturation, $lightness: $lightness);
+}
+
+@function light-color($base, $hue : 0, $saturation : 0, $lightness : 0) {
+	@return get-color($base, $hue, $saturation, $lightness);
+}
+
+@function dark-color($base, $hue: 0, $saturation: 0, $lightness: 0) {
+	@return get-color($base, -$hue, -$saturation, -$lightness);
+}
+
+@function thickness($top : 0, $right : null, $bottom : null, $left : null) {
+	@return ($top, if($right, $right, $top), if($bottom, $bottom, $top), if($left, $left, if($right, $right, $top)));
+}
+
+@function top($thickness) {
+	@return nth(thickness($thickness...), 1);
+}
+
+@function right($thickness) {
+	@return nth(thickness($thickness...), 2);
+}
+
+@function bottom($thickness) {
+	@return nth(thickness($thickness...), 3);
+}
+
+@function left($thickness) {
+	@return nth(thickness($thickness...), 4);
+}

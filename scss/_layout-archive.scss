@@ -1,0 +1,88 @@
+.page-archive {
+
+	#main {
+		@extend .entry;
+	}
+
+	.archive-heading {
+		margin: 0 0 20px;
+		padding-bottom: 5px;
+		font-size: 1rem;
+		color: $accent;
+		border-bottom: dashed 3px $accent;
+	}
+
+	.archive-entries {
+		border-bottom: dashed 3px $accent;
+
+		.archive-entry {
+			margin: 10px 0;
+			padding: 0 10px 10px;
+			border-bottom: solid 1px $accent;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		.date {
+			font-size: 90%;
+			color: $accent-light;
+			
+			&::before {
+				@include blogicon($blogicon-time);
+			}
+		}
+
+		.entry-title {
+			line-height: 1.2;
+			color: $accent;
+		}
+
+		.categories {
+			display: flex;
+			flex-flow: row wrap;
+			margin: 5px 0 10px;
+			
+			a { @extend %tag-small; }
+		}
+
+		.entry-thumb {
+			border-radius: 15%;
+		}
+
+		.entry-description {
+			margin: 0 0 10px 0;
+			font-size: 90%;
+		}
+	}
+
+	span.highlight {
+		display: inline-block;
+		box-sizing: content-box;
+		margin: 0;
+		padding: 0;
+		font-weight: inherit;
+		color: inherit;
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+
+		$animation: unique-id();
+		animation-name: $animation;
+		animation-duration: 0.5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in;
+		@keyframes #{$animation} {
+			from {
+				transform-origin: center bottom;
+				transform: translateY(0) scale(1.05, 0.75);
+			}
+			to {
+				transform-origin: center bottom;
+				transform: translateY(-0.5ex) scale(0.95, 1.1);
+			}
+		}
+	}
+}

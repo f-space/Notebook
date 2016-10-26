@@ -1,0 +1,30 @@
+.hatena-module-html-apps {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	.app {
+		flex: 0 1 200px;
+		margin: 10px 20px;
+	}
+
+	.app-icon {
+		display: block;
+		margin: 5px auto;
+		width: 96px;
+		height: 96px;
+	}
+
+	.app-name {
+		margin: 5px 0;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.app-description {
+		margin: 5px 0;
+		font-size: 80%;
+		text-align: center;
+	}
+}

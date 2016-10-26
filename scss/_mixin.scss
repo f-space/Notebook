@@ -1,0 +1,64 @@
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin fixed-width($width) {
+	width: $width;
+	min-width: $width;
+	max-width: $width;
+}
+
+@mixin fixed-height($height) {
+	height: $height;
+	min-height: $height;
+	max-height: $height;
+}
+
+@mixin fill {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+@mixin base-position($z-stack: false) {
+	position: relative;
+	@if $z-stack { z-index: 0; }
+}
+
+@mixin background {
+	@include fill;
+	position: absolute;
+	z-index: -1;
+}
+
+@mixin background-before($content: '', $display: block) {
+	&::before {
+		@include background;
+		content: $content;
+		display: $display;
+	}
+}
+
+@mixin background-after($content: '', $display: block) {
+	&::after {
+		@include background;
+		content: $content;
+		display: $display;
+	}
+}
+
+@mixin in-headings() {
+	@at-root #{selector-nest('h1, h2, h3, h4, h5, h6', &)} {
+		@content;
+	}
+}
+
+@mixin blogicon($blogicon) {
+	content: $blogicon;
+	font-family: $blogicon-font;
+}

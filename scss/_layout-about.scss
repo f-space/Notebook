@@ -1,0 +1,28 @@
+.page-about {
+
+	dl:last-of-type {
+		margin: 50px 10px 20px;
+
+		dt {
+			float: left;
+			display: block;
+			width: 12em;
+			margin: 0;
+			font-weight: bold;
+			color: $accent;
+		}
+
+		dd {
+			display: block;
+			margin: 0;
+		}
+
+		dd::after {
+			content: '';
+			display: block;
+			clear: both;
+			margin-bottom: 20px;
+			border-bottom: dotted 2px $accent;
+		}
+	}
+}

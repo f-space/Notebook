@@ -1,0 +1,65 @@
+// Colors
+
+$base: #454545;
+$base-light: light-color($base, 10, 10%, 10%);
+$base-dark: dark-color($base, 10, 10%, 10%);
+$base-clip: light-color($base, 10, 10%, 50%);
+$base-white: light-color($base, 0, 0%, 50%);
+$accent: #a74040;
+$accent-light: light-color($accent, 10, 10%, 10%);
+$accent-dark: dark-color($accent, 10, 10%, 10%);
+$accent-clip: light-color($accent, 10, 10%, 50%);
+
+$background: #4c4c4c;
+$background-content: #ffffff;
+$background-code: transparent;
+
+$title: light-color($background, 10, 10%, 50%);
+$description: light-color($background, 10, 10%, 50%);
+$footer: light-color($background, 10, 10%, 50%);
+
+$text: $base;
+$text-light: light-color($text, 10, 10%, 10%);
+$text-dark: dark-color($text, 10, 10%, 10%);
+
+$link: $accent;
+$link-visited: $accent-light;
+$link-hover: $accent-dark;
+
+$border: $base-light;
+$border-light: $base-white;
+$border-content: $base;
+
+$code-statement: #3344ff;
+$code-type: #3344ff;
+$code-identifier: $text;
+$code-constant: #cc4422;
+$code-preproc: #3344ff;
+$code-comment: #449933;
+$code-special: #cc4422;
+
+// Layout
+
+$container-margin: 0 auto 30px;
+$column-spacing: 20px;
+$title-border-radius: 30px;
+
+$entry-width: 720px;
+$entry-padding: 30px 20px;
+$entry-border-width: 0;
+$entry-border-radius: 30px;
+$entry-spacing: 20px;
+
+$sidebar-width: 336px;
+$sidebar-padding: 30px 20px;
+$sidebar-border-width: 0;
+$sidebar-border-radius: 30px;
+
+$container-width: $entry-width + $sidebar-width + $column-spacing;
+$sidebar-basis: $sidebar-width * 0.75;
+
+// Global Header
+
+$globalheader-background: $accent-dark;
+$globalheader-color: $accent-clip;
+$globalheader-height: 37px;

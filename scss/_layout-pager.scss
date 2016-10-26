@@ -1,0 +1,58 @@
+.pager {
+	@include clearfix;
+
+	.pager-prev, .pager-next {
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		width: 45%;
+		margin: 10px 0;
+		padding: 10px 20px;
+		font-weight: bold;
+		font-size: 90%;
+		color: $accent;
+		background: $background-content;
+		border-radius: 20px / 50%;
+
+		a {
+			flex: 0 1 auto;
+			min-width: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			&:hover {
+				background: linear-gradient(transparent 60%, rgba($accent-light, 0.5));
+			}
+		}
+	}
+
+	.pager-prev {
+		float: left;
+		text-align: left;
+		flex-flow: row nowrap;
+
+		&::before {
+			@include blogicon($blogicon-chevron-left);
+			flex: 0 0 auto;
+			margin-right: 0.5em;
+		}
+	}
+
+	.pager-next {
+		float:right;
+		text-align: right;
+		flex-flow: row-reverse nowrap;
+
+		&::before {
+			@include blogicon($blogicon-chevron-right);
+			flex: 0 0 auto;
+			margin-left: 0.5em;
+		}
+	}
+
+	.pager-arrow {
+		display: none;
+	}
+
+}

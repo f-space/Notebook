@@ -1,0 +1,106 @@
+.entry-header {
+	@include base-position;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	padding-left: 1em;
+	border-bottom: dashed 3px $accent;
+
+	&::before {
+		@include fixed-height(60px);
+		content: '';
+		display: block;
+	}
+}
+
+.entry-title {
+	margin: 5px 0;
+	color: $accent;
+}
+
+.entry-date {
+	$year-fontsize: 16px;
+	$month-fontsize: 20px;
+	$day-fontsize: 36px;
+	$padding-top: 5px;
+	$padding-right: 25px;
+	$padding-bottom: 5px;
+	$padding-left: 10px;
+	$horizontal-spacing: 5px;
+	$vertical-spacing: 5px;
+	$year-width: 35px;
+	$month-offset: 8px;
+	$day-width: 40px;
+	$content-width: $year-width + $month-offset + $horizontal-spacing + $day-width;
+	$content-height: max($year-fontsize + $vertical-spacing + $month-fontsize, $day-fontsize);
+	$total-width: $padding-left + $content-width + $padding-right;
+	$total-height: $padding-top + $content-height + $padding-bottom;
+
+	@include fixed-width($total-width);
+	@include fixed-height($total-height);
+	position: absolute;
+	left: -(left($entry-padding) + 10px);
+	top: 0;
+	font-weight: bold;
+	color: $accent-clip;
+	background-color: $accent;
+	border-radius: 5px 20px 20px 5px;
+
+	&:hover {
+		box-shadow: 3px 3px 3px $accent-dark;
+	}
+
+	.date-year {
+		position: absolute;
+		left: $padding-left;
+		top: $padding-top;
+		width: $year-width;
+		text-align: right;
+		vertical-align: top;
+		font-size: $year-fontsize;
+		white-space: nowrap;
+	}
+
+	.date-month {
+		position: absolute;
+		left: $padding-left;
+		bottom: $padding-bottom;
+		width: $year-width + $month-offset;
+		text-align: right;
+		vertical-align: bottom;
+		font-size: $month-fontsize;
+		white-space: nowrap;
+	}
+
+	.date-day {
+		position: absolute;
+		right: $padding-right;
+		bottom: $padding-bottom;
+		text-align: right;
+		vertical-align: bottom;
+		font-size: $day-fontsize;
+		white-space: nowrap;
+	}
+
+	.hyphen { display :none; }
+}
+
+.entry-categories {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 5px 0;
+	
+	&.no-categories {
+		display: none;
+		margin: 0;
+	}
+
+	a { @extend %tag; }
+}
+
+.entry-header-menu {
+	position: absolute;
+	left: -(left($entry-padding) + 100px);
+	bottom: 0px;
+
+	a { @extend .btn; }
+}

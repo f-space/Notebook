@@ -1,0 +1,171 @@
+.entry-content {
+	padding-bottom: 10px;
+	border-bottom: dashed 5px $accent;
+
+	a {
+		@extend %link;
+
+		@include in-headings {
+			color: inherit;
+		}
+	}
+
+	p {
+		margin: 1ex 0.5em;
+		line-height: 1.5;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		margin: 3ex 0 2ex 0;
+	}
+
+	h1 {
+		padding: 1ex 0 1ex 1em;
+		font-size: 160%;
+		border-top: double 5px $accent;
+		border-bottom: double 5px $accent;
+	}
+
+	h2 {
+		padding: 1ex 0 1ex 1em;
+		font-size: 150%;
+		border-left: solid 10px $accent;
+		border-top: solid 1px $accent;
+		border-bottom: solid 1px $accent;
+	}
+
+	h3 {
+		padding: 0.5ex 0 0.5ex 1em;
+		font-size: 140%;
+		border-left: solid 10px $base-light;
+		border-top: solid 1px $base-light;
+		border-bottom: solid 1px $base-light;
+	}
+
+	h4 {
+		padding: 0.5ex 0 0.5ex 1em;
+		font-size: 130%;
+		border-left: solid 5px $accent;
+		border-bottom: solid 1px $accent;
+	}
+
+	h5 {
+		padding: 0.5ex 0 0.5ex 1em;
+		font-size: 110%;
+		border-bottom: solid 1px $base-light;
+	}
+
+	h6 {
+		padding: 0.5ex 0 0.5ex 1em;
+		font-size: 100%;
+	}
+
+	hr {
+		width: 80%;
+	}
+
+	ul, ol, dl {
+		margin: 10px 1em;
+	}
+
+	table {
+		margin: 20px auto;
+		border-collapse: collapse;
+		border-spacing: 0;
+
+		img {
+			max-width: none;
+		}
+	}
+
+	table th,
+	table td {
+		border: solid 1px $border;
+		padding: 5px 10px;
+	}
+
+	table th {
+		background-color: $accent-light;
+		color: $accent-clip;
+	}
+
+	blockquote {
+		margin: 20px 2em;
+		padding: 20px;
+		border: 1px solid $border-light;
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	pre {
+		margin: 20px 5px;
+		padding: 10px 15px;
+		line-height: 1.2;
+		font-family: inherit;
+		border: 1px solid $border-light;
+		white-space: pre;
+		word-wrap: normal;
+		overflow-wrap: normal;
+
+		&.code {
+			font-family: $monospaced-font;
+			background-color: $background-code;
+		}
+	}
+
+	code {
+		margin: 0;
+		padding: 0.25ex 0.1em;
+		font-family: $monospaced-font;
+		font-size: 90%;
+		color: $text-dark;
+		background: transparent;
+		border: dashed 2px transparent;
+		border-radius: 0.25em;
+
+		&:hover {
+			background-color: rgba($accent-light, 0.1);
+			border-color: $accent-light;
+		}
+	}
+
+	pre > code {
+		margin: 0;
+		padding: 0;
+		font-family: $monospaced-font;
+		font-size: inherit;
+		color: inherit;
+		background: $background-code;
+		border: none;
+		border-radius: 0;
+
+		&:hover {
+			background: $background-code;
+		}
+	}
+
+	.synStatement { color: $code-statement; }
+	.synType { color: $code-type; }
+	.synIdentifier { color: $code-identifier; }
+	.synConstant { color: $code-constant; }
+	.synPreProc { color: $code-preproc; }
+	.synComment { color: $code-comment; }
+	.synSpecial { color: $code-special; }
+
+	.hatena-asin-detail {
+		li { }
+	}
+
+	a.entry-see-more {
+		@extend .btn;
+		display: table;
+		margin: 20px auto;
+		padding: 5px 50px;
+	}
+}

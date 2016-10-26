@@ -1,0 +1,156 @@
+.hatena-module {
+	margin-bottom: 50px;
+	line-height: 1.5;
+
+	&:last-child {margin-bottom: 0; }
+}
+
+.hatena-module-title {
+	text-align: center;
+	font-weight: bold;
+	padding: 1ex 1em;
+	color: $accent;
+	border-top: dashed 2px $accent-light;
+	border-bottom: dashed 2px $accent-light;
+}
+
+.hatena-module-body {
+	margin-top: 20px;
+	padding: 0 0.5em;
+}
+
+.hatena-module-profile {
+
+	.profile-icon {
+		float: left;
+		margin: 0 10px 10px 0;
+		border-radius: 5px;
+	}
+
+	.id {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+
+	.profile-activities {
+		font-size: 75%;
+	}
+
+	.profile-description {
+		clear: both;
+		margin: 2ex 0;
+		font-size: 90%;
+	}
+}
+
+.hatena-urllist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		padding: 5px 0;
+		border-bottom: 1px solid $border;
+	}
+
+	.urllist-image-link {
+		img {
+			border-radius: 15%;
+		}
+	}
+
+	.urllist-date-link {
+		font-size: 80%;
+		color: $accent-light;
+		
+		&::before {
+			@include blogicon($blogicon-time);
+		}
+	}
+
+	.urllist-title-link {
+		margin: 5px 0 10px;
+		font-size: 90%;
+		line-height: 1.2;
+
+		&:hover {
+			background: linear-gradient(transparent 60%, rgba($accent-light, 0.5));
+		}
+	}
+
+	.urllist-categories {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.urllist-category-link {
+		@extend %tag-small;
+	}
+}
+
+.hatena-module-search-box {
+
+	.search-form {
+		@include base-position;
+		border: solid 1px $border;
+		border-radius: 5px;
+	}
+
+	.search-module-input {
+		@include fill;
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 30px 5px 5px;
+		background: none;
+		border: none;
+		outline: none;
+	}
+
+	.search-module-button {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 20px;
+		margin: 0 5px;
+		text-indent: -9999px;
+		background: transparent url(http://blog.hatena.ne.jp/images/theme/search.png) no-repeat right center;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 0.85;
+		}
+	}
+}
+
+.hatena-module-links {
+	a:hover::after {
+		@include blogicon($blogicon-link);
+		vertical-align: bottom;
+		margin-left: 0.5em;
+		color: $accent-light;
+	}
+}
+
+.hatena-module-category {
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	li {
+		padding: 5px 0;
+		border-bottom: none;
+	}
+
+	a {
+		@extend %tag;
+	}
+}

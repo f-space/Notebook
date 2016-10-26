@@ -1,0 +1,76 @@
+@import "scss/_layout-header.scss";
+@import "scss/_layout-footer.scss";
+@import "scss/_layout-entry-header.scss";
+@import "scss/_layout-entry-footer.scss";
+@import "scss/_layout-entry-content.scss";
+@import "scss/_layout-sidebar.scss";
+@import "scss/_layout-pager.scss";
+@import "scss/_layout-about.scss";
+@import "scss/_layout-archive.scss";
+@import "scss/_layout-extension.scss";
+
+:root, body {
+	background-color: $background;
+	color: $text;
+	font-family: $default-font;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+#globalheader-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $globalheader-background;
+	color: $globalheader-color;
+}
+
+#container {
+	box-sizing: border-box;
+	width: $container-width;
+	margin: $container-margin;
+	padding-top: $globalheader-height;
+
+	.globalheader-off & {
+		padding-top: 0;
+	}
+}
+
+#content {
+	@include clearfix; 
+}
+
+#main {
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.entry {
+	box-sizing: border-box;
+	width: $entry-width;
+	margin-bottom: $entry-spacing;
+	padding: $entry-padding;
+	border: solid $entry-border-width $border-content;
+	border-radius: $entry-border-radius;
+	background-color: $background-content;
+	background-clip: padding-box;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+#box2 {
+	float: right;
+	box-sizing: border-box;
+	width: $sidebar-width;
+	padding: $sidebar-padding;
+	border: solid $sidebar-border-width $border-content;
+	border-radius: $sidebar-border-radius;
+	background-color: $background-content;
+	background-clip: padding-box;
+}
