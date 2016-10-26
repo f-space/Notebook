@@ -12,4 +12,4 @@ SASS(SCSS)にて記述しているためこれらをコンパイルできる環�
 
 ## License
 
-[MIT](/License)
+[MIT](/LICENSE)
