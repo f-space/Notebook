@@ -6,6 +6,7 @@
 			position: relative;
 		}
 		.header-image-enable &, .header-image-only & {
+			height: $title-image-height;
 			background-position: center center !important;
 			background-size: cover;
 			background-clip: padding-box;
@@ -33,7 +34,7 @@
 		display: inline;
 		margin: 0 0.25em;
 		font-weight: bold;
-		font-size: 2rem;
+		font-size: $title-font-size;
 		color: $title;
 		white-space: nowrap;
 
@@ -48,7 +49,7 @@
 		display: inline-block;
 		margin: 0 0.25em;
 		font-weight: bold;
-		font-size: 1rem;
+		font-size: $description-font-size;
 		color: $description;
 
 		.header-image-enable & {

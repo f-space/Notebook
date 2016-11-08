@@ -57,8 +57,24 @@
 		width: 100%;
 	}
 
-	#blog-title #blog-description {
-		display: none;
+	#blog-title {
+		$scale: 0.5;
+
+		#blog-title-inner {
+			.header-image-enable &, .header-image-only & {
+				height: $title-image-height * $scale;
+			}
+		}
+
+		#title {
+			.header-image-enable & {
+				font-size: $title-font-size * $scale;
+			}
+		}
+
+		#blog-description {
+			display: none;
+		}
 	}
 
 	.breadcrumb {
