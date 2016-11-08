@@ -130,13 +130,13 @@
 
 	code {
 		margin: 0;
-		padding: 0.25ex 0.1em;
+		padding: 0.25ex 0.25em;
 		font-family: $monospaced-font;
 		font-size: 90%;
 		color: $text-dark;
 		background: transparent;
-		border: dashed 2px transparent;
-		border-radius: 0.25em;
+		border: dotted 2px transparent;
+		border-radius: 0.5em;
 
 		&:hover {
 			background-color: rgba($accent-light, 0.1);
