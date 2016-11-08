@@ -69,7 +69,16 @@
 	}
 
 	ul, ol, dl {
-		margin: 10px 1em;
+		margin: 10px 2em;
+		line-height: 1.75;
+
+		ul, ol, dl {
+			margin: 0 2em;
+		}
+	}
+
+	ul, ol {
+		padding-left: 1.5em;
 	}
 
 	table {
