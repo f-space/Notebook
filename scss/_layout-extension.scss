@@ -1,3 +1,11 @@
+.hatena-module-html {
+	.note {
+		font-size: 90%;
+
+		a { @extend %link; }
+	}	
+}
+
 .hatena-module-html-apps {
 	display: flex;
 	flex-flow: row wrap;
