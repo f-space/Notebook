@@ -55,6 +55,9 @@
 
 @media (max-width: $entry-width) {
 	#ad-entry-footer {
+		margin-left: -(left($entry-padding));
+		margin-right: -(right($entry-padding));
+
 		& > .adsbygoogle:not(:first-child) {
 			display: none !important;
 		}
