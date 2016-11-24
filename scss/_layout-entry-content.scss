@@ -101,6 +101,24 @@
 		color: $accent-clip;
 	}
 
+	.figure {
+		margin: 20px 2em;
+		text-align: center;
+	}
+
+	.caption {
+		margin: 0.5em 0;
+		font-size: 90%;
+	}
+
+	figure {
+		@extend .figure;
+	}
+
+	figcaption {
+		@extend .caption;
+	}
+
 	blockquote {
 		margin: 20px 2em;
 		padding: 20px;
