@@ -1,5 +1,9 @@
 #ad-header {
 	margin: 20px 0;
+
+	& > .adsbygoogle {
+		display: block;
+	}
 }
 
 #ad-footer {
@@ -10,6 +14,7 @@
 	margin: 20px 0;
 
 	& > .adsbygoogle {
+		display: block;
 		flex: 1 0 $ad-footer-basis;
 		margin: 10px 20px;
 	}
@@ -20,6 +25,10 @@
 	float: right;
 	width: $sidebar-width;
 	margin: 50px 0;
+
+	& > .adsbygoogle {
+		display: block;
+	}
 }
 
 #ad-entry-footer {
@@ -59,6 +68,7 @@
 		margin: 20px 0;
 
 		& > .adsbygoogle {
+			display: block;
 			flex: 1 0 $ad-entry-footer-basis;
 			margin: 5px 10px;
 		}
@@ -71,7 +81,7 @@
 		margin-right: -(right($entry-padding));
 
 		& > .adsbygoogle:not(:first-child) {
-			display: none !important;
+			display: none;
 		}
 	}
 }
