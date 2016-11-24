@@ -57,7 +57,7 @@
 
 %tag {
 	@extend %tag-base;
-	margin: 0 0.5em 0.5ex 0;
+	margin: 0 0.5em 0.25em 0;
 	padding: 5px 10px;
 	font-weight: bold;
 	font-size: 14px;
@@ -65,7 +65,7 @@
 
 %tag-small {
 	@extend %tag-base;
-	margin: 0 0.25em 0.25ex 0;
+	margin: 0 0.25em 0.125em 0;
 	padding: 2px 5px;
 	font-weight: normal;
 	font-size: 12px;

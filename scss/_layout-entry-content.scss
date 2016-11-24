@@ -11,7 +11,7 @@
 	}
 
 	p {
-		margin: 1ex 0.5em;
+		margin: 0.5em 0.5em;
 		line-height: 1.5;
 	}
 
@@ -20,17 +20,17 @@
 	}
 
 	h1,h2,h3,h4,h5,h6 {
-		margin: 3ex 0 2ex 0;
+		margin: 1.5em 0 1em 0;
 	}
 
 	h1 {
-		padding: 1ex 0 1ex 1em;
+		padding: 0.5em 0 0.5em 1em;
 		font-size: 160%;
 		border-bottom: dashed 3px $accent;
 	}
 
 	h2 {
-		padding: 1ex 0 1ex 1em;
+		padding: 0.5em 0 0.5em 1em;
 		font-size: 150%;
 		border-left: solid 10px $accent;
 		border-top: solid 1px $accent;
@@ -38,7 +38,7 @@
 	}
 
 	h3 {
-		padding: 0.5ex 0 0.5ex 1em;
+		padding: 0.25em 0 0.25em 1em;
 		font-size: 140%;
 		border-left: solid 10px $base-light;
 		border-top: solid 1px $base-light;
@@ -46,20 +46,20 @@
 	}
 
 	h4 {
-		padding: 0.5ex 0 0.5ex 1em;
+		padding: 0.25em 0 0.25em 1em;
 		font-size: 130%;
 		border-left: solid 5px $accent;
 		border-bottom: solid 1px $accent;
 	}
 
 	h5 {
-		padding: 0.5ex 0 0.5ex 1em;
+		padding: 0.25em 0 0.25em 1em;
 		font-size: 110%;
 		border-bottom: solid 1px $base-light;
 	}
 
 	h6 {
-		padding: 0.5ex 0 0.5ex 1em;
+		padding: 0.25em 0 0.25em 1em;
 		font-size: 100%;
 	}
 
@@ -129,7 +129,7 @@
 
 	code {
 		margin: 0;
-		padding: 0.25ex 0.25em;
+		padding: 0.125em 0.25em;
 		font-family: $monospaced-font;
 		font-size: 90%;
 		color: $text-dark;

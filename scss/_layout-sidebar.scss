@@ -8,7 +8,7 @@
 .hatena-module-title {
 	text-align: center;
 	font-weight: bold;
-	padding: 1ex 1em;
+	padding: 0.5em 1em;
 	color: $accent;
 	border-top: dashed 2px $accent-light;
 	border-bottom: dashed 2px $accent-light;
@@ -39,7 +39,7 @@
 
 	.profile-description {
 		clear: both;
-		margin: 2ex 0;
+		margin: 1em 0;
 		font-size: 90%;
 	}
 }
@@ -50,7 +50,7 @@
 	padding: 0;
 
 	li {
-		padding: 1ex 0.25em;
+		padding: 0.5em 0.25em;
 		border-bottom: 1px solid $border;
 	}
 
