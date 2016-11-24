@@ -24,6 +24,10 @@
 
 #ad-entry-footer {
 	display: none;
+
+	& > .adsbygoogle {
+		display: none;
+	}
 }
 
 .adsbygoogle {
@@ -33,10 +37,18 @@
 @media(max-width: $container-width) {
 	#ad-footer {
 		display: none;
+
+		& > .adsbygoogle {
+			display: none;
+		}
 	}
 	
 	#ad-sidebar {
 		display: none;
+
+		& > .adsbygoogle {
+			display: none;
+		}
 	}
 	
 	#ad-entry-footer {
