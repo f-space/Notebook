@@ -28,18 +28,6 @@
 	}
 
 	.pager-prev {
-		float: left;
-		text-align: left;
-		flex-flow: row nowrap;
-
-		&::before {
-			@include blogicon($blogicon-chevron-left);
-			flex: 0 0 auto;
-			margin-right: 0.5em;
-		}
-	}
-
-	.pager-next {
 		float:right;
 		text-align: right;
 		flex-flow: row-reverse nowrap;
@@ -48,6 +36,18 @@
 			@include blogicon($blogicon-chevron-right);
 			flex: 0 0 auto;
 			margin-left: 0.5em;
+		}
+	}
+
+	.pager-next {
+		float: left;
+		text-align: left;
+		flex-flow: row nowrap;
+
+		&::before {
+			@include blogicon($blogicon-chevron-left);
+			flex: 0 0 auto;
+			margin-right: 0.5em;
 		}
 	}
 
