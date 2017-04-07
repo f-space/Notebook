@@ -1,0 +1,14 @@
+{
+	"name": "notebook",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "node-sass theme.scss theme.css --output-style compressed"
+	},
+	"keywords": [],
+	"author": "F_",
+	"license": "MIT",
+	"devDependencies": {
+		"node-sass": "^4.5.2"
+	}
+}
