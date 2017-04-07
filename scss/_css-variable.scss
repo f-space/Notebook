@@ -1,0 +1,55 @@
+:root {
+	--color-text: $text;
+	--color-text-light: $text-light;
+	--color-text-dark: $text-dark;
+	--color-text-clip: $text-clip;
+	--color-text-white: $text-white;
+
+	--color-main: $main;
+	--color-main-light: $main-light;
+	--color-main-dark: $main-dark;
+	--color-main-clip: $main-clip;
+
+	--color-sub: $sub;
+	--color-sub-light: $sub-light;
+	--color-sub-dark: $sub-dark;
+	--color-sub-clip: $sub-clip;
+
+	--color-highlight-r: $highlight-r;
+	--color-highlight-g: $highlight-g;
+	--color-highlight-b: $highlight-b;
+
+	--color-background: $background;
+	--color-content: $background-content;
+	--color-border: var(--color-text);
+
+	--color-title: $title;
+	--color-description: var(--color-title);
+	--color-footer: var(--color-description);
+
+	--color-rule: var(--color-text-light);
+	--color-rule-light: var(--color-text-white);
+
+	--color-link: var(--color-main);
+	--color-link-visited: var(--color-main-light);
+	--color-link-hover: var(--color-main-dark);
+
+	--color-code-background: $code-background;
+	--color-code-statement: $code-statement;
+	--color-code-type: $code-type;
+	--color-code-identifier: var(--color-text);
+	--color-code-constant: $code-constant;
+	--color-code-preproc: $code-preproc;
+	--color-code-comment: $code-comment;
+	--color-code-special: $code-special;
+
+	--color-globalheader: var(--color-main-clip);
+	--color-globalheader-background: var(--color-main-dark);
+
+	--border-width-entry: $entry-border-width;
+	--border-width-sidebar: $sidebar-border-width;
+
+	--height-title-image: $title-image-height;
+	--font-size-title: $title-font-size;
+	--font-size-description: $description-font-size;
+}

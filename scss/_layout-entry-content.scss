@@ -1,6 +1,7 @@
 .entry-content {
 	padding-bottom: 10px;
 	border-bottom: dashed 3px $main;
+	border-bottom: dashed 3px var(--color-main);
 
 	a {
 		@extend %link;
@@ -27,35 +28,45 @@
 		padding: 0.5em 0 0.5em 1em;
 		font-size: 160%;
 		border-bottom: dashed 3px $main;
+		border-bottom: dashed 3px var(--color-main);
 	}
 
 	h2 {
 		padding: 0.5em 0 0.5em 1em;
 		font-size: 150%;
 		border-left: solid 10px $main;
+		border-left: solid 10px var(--color-main);
 		border-top: solid 1px $main;
+		border-top: solid 1px var(--color-main);
 		border-bottom: solid 1px $main;
+		border-bottom: solid 1px var(--color-main);
 	}
 
 	h3 {
 		padding: 0.25em 0 0.25em 1em;
 		font-size: 140%;
 		border-left: solid 10px $sub-light;
+		border-left: solid 10px var(--color-sub-light);
 		border-top: solid 1px $sub-light;
+		border-top: solid 1px var(--color-sub-light);
 		border-bottom: solid 1px $sub-light;
+		border-bottom: solid 1px var(--color-sub-light);
 	}
 
 	h4 {
 		padding: 0.25em 0 0.25em 1em;
 		font-size: 130%;
 		border-left: solid 5px $main;
+		border-left: solid 5px var(--color-main);
 		border-bottom: solid 1px $main;
+		border-bottom: solid 1px var(--color-main);
 	}
 
 	h5 {
 		padding: 0.25em 0 0.25em 1em;
 		font-size: 110%;
 		border-bottom: solid 1px $sub-light;
+		border-bottom: solid 1px var(--color-sub-light);
 	}
 
 	h6 {
@@ -93,12 +104,15 @@
 	table th,
 	table td {
 		border: solid 1px $rule;
+		border: solid 1px var(--color-rule);
 		padding: 5px 10px;
 	}
 
 	table th {
 		background-color: $main-light;
+		background-color: var(--color-main-light);
 		color: $main-clip;
+		color: var(--color-main-clip);
 	}
 
 	.figure {
@@ -123,6 +137,7 @@
 		margin: 20px 2em;
 		padding: 20px;
 		border: 1px solid $rule-light;
+		border: 1px solid var(--color-rule-light);
 		p {
 			margin-top: 0;
 			margin-bottom: 0;
@@ -135,6 +150,7 @@
 		line-height: 1.2;
 		font-family: inherit;
 		border: 1px solid $rule-light;
+		border: 1px solid var(--color-rule-light);
 		white-space: pre;
 		word-wrap: normal;
 		overflow-wrap: normal;
@@ -142,6 +158,7 @@
 		&.code {
 			font-family: $monospaced-font;
 			background-color: $code-background;
+			background-color: var(--color-code-background);
 		}
 	}
 
@@ -151,13 +168,16 @@
 		font-family: $monospaced-font;
 		font-size: 90%;
 		color: $text-dark;
+		color: var(--color-text-dark);
 		background: transparent;
 		border: dotted 2px transparent;
 		border-radius: 0.5em;
 
 		&:hover {
-			background-color: rgba($main-light, 0.1);
+			background-color: rgba($highlight-r, $highlight-g, $highlight-b, 0.1);
+			background-color: unquote("rgba(var(--color-highlight-r), var(--color-highlight-g), var(--color-highlight-b), 0.1)");
 			border-color: $main-light;
+			border-color: var(--color-main-light);
 		}
 	}
 
@@ -168,21 +188,23 @@
 		font-size: inherit;
 		color: inherit;
 		background: $code-background;
+		background: var(--color-code-background);
 		border: none;
 		border-radius: 0;
 
 		&:hover {
 			background: $code-background;
+			background: var(--color-code-background);
 		}
 	}
 
-	.synStatement { color: $code-statement; }
-	.synType { color: $code-type; }
-	.synIdentifier { color: $code-identifier; }
-	.synConstant { color: $code-constant; }
-	.synPreProc { color: $code-preproc; }
-	.synComment { color: $code-comment; }
-	.synSpecial { color: $code-special; }
+	.synStatement { color: $code-statement; color: var(--color-code-statement); }
+	.synType { color: $code-type; color: var(--color-code-type); }
+	.synIdentifier { color: $code-identifier; color: var(--color-code-identifier); }
+	.synConstant { color: $code-constant; color: var(--color-code-constant); }
+	.synPreProc { color: $code-preproc; color: var(--color-code-preproc); }
+	.synComment { color: $code-comment; color: var(--color-code-comment); }
+	.synSpecial { color: $code-special; color: var(--color-code-special); }
 
 	.hatena-asin-detail {
 		li { }

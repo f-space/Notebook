@@ -7,6 +7,7 @@
 		}
 		.header-image-enable &, .header-image-only & {
 			height: $title-image-height;
+			height: var(--height-title-image);
 			background-position: center center !important;
 			background-size: cover;
 			background-clip: padding-box;
@@ -35,12 +36,15 @@
 		margin: 0 0.25em;
 		font-weight: bold;
 		font-size: $title-font-size;
+		font-size: var(--font-size-title);
 		color: $title;
+		color: var(--color-title);
 		white-space: nowrap;
 
 		.header-image-enable & a {
 			font-weight: bold;
 			color: $title;
+			color: var(--color-title);
 			text-shadow: none;
 		}
 	}
@@ -50,11 +54,14 @@
 		margin: 0 0.25em;
 		font-weight: bold;
 		font-size: $description-font-size;
+		font-size: var(--font-size-description);
 		color: $description;
+		color: var(--color-description);
 
 		.header-image-enable & {
 			font-weight: bold;
 			color: $description;
+			color: var(--color-description);
 			text-shadow: none;
 		}
 	}

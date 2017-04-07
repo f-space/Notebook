@@ -6,6 +6,7 @@
 	text-align: center;	
 	font-size: 80%;
 	color: $main-light;
+	color: var(--color-main-light);
 }
 
 .social-buttons {
@@ -25,15 +26,18 @@
 			@include base-position;
 			padding: 10px 10px 10px 70px;
 			border-bottom: dashed 1px $main-light;
+			border-bottom: dashed 1px var(--color-main-light);
 
 			&:first-child {
 				border-top: dashed 1px $main-light;
+				border-top: dashed 1px var(--color-main-light);
 			}
 		}
 
 		&.read-more-comments {
 			margin-top: 5px;
 			color: $main;
+			color: var(--color-main);
 		}
 	}
 
@@ -62,6 +66,7 @@
 	margin: 5px 0;
 	font-size: 80%;
 	color: $text-light;
+	color: var(--color-text-light);
 }
 
 .leave-comment-title {

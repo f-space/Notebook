@@ -10,6 +10,7 @@
 			margin: 0;
 			font-weight: bold;
 			color: $main;
+			color: var(--color-main);
 		}
 
 		dd {
@@ -23,6 +24,7 @@
 			clear: both;
 			margin-bottom: 20px;
 			border-bottom: dotted 2px $main;
+			border-bottom: dotted 2px var(--color-main);
 		}
 	}
 }

@@ -1,13 +1,16 @@
 %link {
 	color: $link;
+	color: var(--color-link);
 	text-decoration: none;
 
 	&:visited {
 		color: $link-visited;
+		color: var(--color-link-visited);
 	}
 
 	&:hover {
 		color: $link-hover;
+		color: var(--color-link-hover);
 	}
 }
 
@@ -17,6 +20,7 @@
 	display: inline-block;
 	text-align: center;
 	color: $main-clip;
+	color: var(--color-main-clip);
 
 	&:hover {
 		transform: scale(1.05, 1.05);
@@ -24,16 +28,20 @@
 
 	&:active {
 		color: $main;
+		color: var(--color-main);
 
 		&::before {
 			background-color: $main-clip;
+			background-color: var(--color-main-clip);
 			background-clip: padding-box;
 			border: solid 0.25em $main;
+			border: solid 0.25em var(--color-main);
 		}
 	}
 
 	&::before {
 		background-color: $main;
+		background-color: var(--color-main);
 		border-radius: 0.5em;
 	}
 }
@@ -42,7 +50,9 @@
 	display: inline-block;
 	text-align: center;
 	color: $main-clip;
+	color: var(--color-main-clip);
 	background-color: $main-light;
+	background-color: var(--color-main-light);
 	border-radius: 0.5em;
 
 	&:hover {
@@ -51,7 +61,9 @@
 
 	&:active {
 		color: $main-light;
+		color: var(--color-main-light);
 		background-color: $main-clip;
+		background-color: var(--color-main-clip);
 	}
 }
 
@@ -78,6 +90,7 @@ a {
 
 .keyword {
 	border-bottom: solid 1px $main-light;
+	border-bottom: solid 1px var(--color-main-light);
 
 	&:not(:hover) {
 		@include in-headings {
@@ -92,6 +105,7 @@ a {
 		margin-left: 0.25em;
 		font-size: 80%;
 		color: $main-light;
+		color: var(--color-main-light);
 		transform: scaleX(-1);
 	}
 }

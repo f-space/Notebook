@@ -16,6 +16,10 @@ $sub-light: light-color($sub, 10, 10%, 10%);
 $sub-dark: dark-color($sub, 10, 10%, 10%);
 $sub-clip: light-color($sub, 10, 10%, 50%);
 
+$highlight-r: red($main-light);
+$highlight-g: green($main-light);
+$highlight-b: blue($main-light);
+
 $background: #4c4c4c;
 $background-content: #ffffff;
 $border: $text;

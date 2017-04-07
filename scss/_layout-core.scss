@@ -12,7 +12,9 @@
 
 :root, body {
 	background-color: $background;
+	background-color: var(--color-background);
 	color: $text;
+	color: var(--color-text);
 	font-family: $default-font;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -24,7 +26,9 @@
 	left: 0;
 	width: 100%;
 	background-color: $globalheader-background;
+	background-color: var(--color-globalheader-background);
 	color: $globalheader-color;
+	color: var(--color-globalheader);
 }
 
 #container {
@@ -56,8 +60,10 @@
 	margin-bottom: $entry-spacing;
 	padding: $entry-padding;
 	border: solid $entry-border-width $border;
+	border: solid var(--border-width-entry) var(--color-border);
 	border-radius: $entry-border-radius;
 	background-color: $background-content;
+	background-color: var(--color-content);
 	background-clip: padding-box;
 
 	&:last-child {
@@ -71,7 +77,9 @@
 	width: $sidebar-width;
 	padding: $sidebar-padding;
 	border: solid $sidebar-border-width $border;
+	border: solid var(--border-width-sidebar) var(--color-border);
 	border-radius: $sidebar-border-radius;
 	background-color: $background-content;
+	background-color: var(--color-content);
 	background-clip: padding-box;
 }

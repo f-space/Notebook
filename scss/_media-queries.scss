@@ -64,12 +64,14 @@
 		#blog-title-inner {
 			.header-image-enable &, .header-image-only & {
 				height: $title-image-height * $scale;
+				height: calc(var(--height-title-image) * #{$scale});
 			}
 		}
 
 		#title {
 			.header-image-enable & {
 				font-size: $title-font-size * $scale;
+				font-size: calc(var(--font-size-title) * #{$scale});
 			}
 		}
 
