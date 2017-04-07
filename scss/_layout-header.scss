@@ -74,6 +74,10 @@
 		margin: 5px 5px;
 		padding: 5px 20px;
 
+		[itemprop='url'] {
+			display: table-cell;
+		}
+
 		[itemprop='title'] {
 			display: table-cell;
 			min-width: 150px;
