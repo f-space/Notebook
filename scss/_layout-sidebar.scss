@@ -41,6 +41,10 @@
 		clear: both;
 		margin: 1em 0;
 		font-size: 90%;
+
+		a {
+			@extend %link;
+		}
 	}
 }
 
