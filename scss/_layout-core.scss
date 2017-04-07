@@ -55,7 +55,7 @@
 	width: $entry-width;
 	margin-bottom: $entry-spacing;
 	padding: $entry-padding;
-	border: solid $entry-border-width $border-content;
+	border: solid $entry-border-width $border;
 	border-radius: $entry-border-radius;
 	background-color: $background-content;
 	background-clip: padding-box;
@@ -70,7 +70,7 @@
 	box-sizing: border-box;
 	width: $sidebar-width;
 	padding: $sidebar-padding;
-	border: solid $sidebar-border-width $border-content;
+	border: solid $sidebar-border-width $border;
 	border-radius: $sidebar-border-radius;
 	background-color: $background-content;
 	background-clip: padding-box;

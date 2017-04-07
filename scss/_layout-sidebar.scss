@@ -9,9 +9,9 @@
 	text-align: center;
 	font-weight: bold;
 	padding: 0.5em 1em;
-	color: $accent;
-	border-top: dashed 2px $accent-light;
-	border-bottom: dashed 2px $accent-light;
+	color: $main;
+	border-top: dashed 2px $main-light;
+	border-bottom: dashed 2px $main-light;
 }
 
 .hatena-module-body {
@@ -55,7 +55,7 @@
 
 	li {
 		padding: 0.5em 0.25em;
-		border-bottom: 1px solid $border;
+		border-bottom: 1px solid $rule;
 	}
 
 	.urllist-image-link {
@@ -67,7 +67,7 @@
 
 	.urllist-date-link {
 		font-size: 80%;
-		color: $accent-light;
+		color: $main-light;
 		
 		&::before {
 			@include blogicon($blogicon-time);
@@ -80,7 +80,7 @@
 		line-height: 1.2;
 
 		&:hover {
-			background: linear-gradient(transparent 60%, rgba($accent-light, 0.5));
+			background: linear-gradient(transparent 60%, rgba($main-light, 0.5));
 		}
 	}
 
@@ -98,7 +98,7 @@
 
 	.search-form {
 		@include base-position;
-		border: solid 1px $border;
+		border: solid 1px $rule;
 		border-radius: 5px;
 	}
 
@@ -140,7 +140,7 @@
 		@include blogicon($blogicon-link);
 		vertical-align: bottom;
 		margin-left: 0.5em;
-		color: $accent-light;
+		color: $main-light;
 	}
 }
 

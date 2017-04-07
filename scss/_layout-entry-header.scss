@@ -3,7 +3,7 @@
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 	padding-left: 1em;
-	border-bottom: dashed 3px $accent;
+	border-bottom: dashed 3px $main;
 
 	&::before {
 		@include fixed-height(60px);
@@ -14,7 +14,7 @@
 
 .entry-title {
 	margin: 5px 0;
-	color: $accent;
+	color: $main;
 }
 
 .entry-date {
@@ -41,12 +41,12 @@
 	left: -(left($entry-padding) + 10px);
 	top: 0;
 	font-weight: bold;
-	color: $accent-clip;
-	background-color: $accent;
+	color: $main-clip;
+	background-color: $main;
 	border-radius: 5px 20px 20px 5px;
 
 	&:hover {
-		box-shadow: 3px 3px 3px $accent-dark;
+		box-shadow: 3px 3px 3px $main-dark;
 	}
 
 	.date-year {

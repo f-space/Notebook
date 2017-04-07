@@ -9,7 +9,7 @@
 			width: 12em;
 			margin: 0;
 			font-weight: bold;
-			color: $accent;
+			color: $main;
 		}
 
 		dd {
@@ -22,7 +22,7 @@
 			display: block;
 			clear: both;
 			margin-bottom: 20px;
-			border-bottom: dotted 2px $accent;
+			border-bottom: dotted 2px $main;
 		}
 	}
 }

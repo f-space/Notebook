@@ -1,35 +1,37 @@
 // Colors
 
-$base: #454545;
-$base-light: light-color($base, 10, 10%, 10%);
-$base-dark: dark-color($base, 10, 10%, 10%);
-$base-clip: light-color($base, 10, 10%, 50%);
-$base-white: light-color($base, 0, 0%, 50%);
-$accent: #a74040;
-$accent-light: light-color($accent, 10, 10%, 10%);
-$accent-dark: dark-color($accent, 10, 10%, 10%);
-$accent-clip: light-color($accent, 10, 10%, 50%);
+$text: #454545;
+$text-light: light-color($text, 10, 10%, 10%);
+$text-dark: dark-color($text, 10, 10%, 10%);
+$text-clip: light-color($text, 10, 10%, 50%);
+$text-white: light-color($text, 0, 0%, 50%);
+
+$main: #a74040;
+$main-light: light-color($main, 10, 10%, 10%);
+$main-dark: dark-color($main, 10, 10%, 10%);
+$main-clip: light-color($main, 10, 10%, 50%);
+
+$sub: $text;
+$sub-light: light-color($sub, 10, 10%, 10%);
+$sub-dark: dark-color($sub, 10, 10%, 10%);
+$sub-clip: light-color($sub, 10, 10%, 50%);
 
 $background: #4c4c4c;
 $background-content: #ffffff;
-$background-code: transparent;
+$border: $text;
 
 $title: light-color($background, 10, 10%, 50%);
-$description: light-color($background, 10, 10%, 50%);
-$footer: light-color($background, 10, 10%, 50%);
+$description: $title;
+$footer: $description;
 
-$text: $base;
-$text-light: light-color($text, 10, 10%, 10%);
-$text-dark: dark-color($text, 10, 10%, 10%);
+$rule: $text-light;
+$rule-light: $text-white;
 
-$link: $accent;
-$link-visited: $accent-light;
-$link-hover: $accent-dark;
+$link: $main;
+$link-visited: $main-light;
+$link-hover: $main-dark;
 
-$border: $base-light;
-$border-light: $base-white;
-$border-content: $base;
-
+$code-background: transparent;
 $code-statement: #3344ff;
 $code-type: #3344ff;
 $code-identifier: $text;
@@ -69,6 +71,6 @@ $ad-entry-footer-basis: 300px;
 
 // Global Header
 
-$globalheader-background: $accent-dark;
-$globalheader-color: $accent-clip;
+$globalheader-background: $main-dark;
+$globalheader-color: $main-clip;
 $globalheader-height: 37px;

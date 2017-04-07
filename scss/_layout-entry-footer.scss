@@ -5,7 +5,7 @@
 .entry-footer-section {
 	text-align: center;	
 	font-size: 80%;
-	color: $accent-light;
+	color: $main-light;
 }
 
 .social-buttons {
@@ -24,16 +24,16 @@
 		&.entry-comment {
 			@include base-position;
 			padding: 10px 10px 10px 70px;
-			border-bottom: dashed 1px $accent-light;
+			border-bottom: dashed 1px $main-light;
 
 			&:first-child {
-				border-top: dashed 1px $accent-light;
+				border-top: dashed 1px $main-light;
 			}
 		}
 
 		&.read-more-comments {
 			margin-top: 5px;
-			color: $accent;
+			color: $main;
 		}
 	}
 
