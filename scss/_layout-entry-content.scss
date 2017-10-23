@@ -99,20 +99,19 @@
 		img {
 			max-width: none;
 		}
-	}
 
-	table th,
-	table td {
-		border: solid 1px $rule;
-		border: solid 1px var(--color-rule);
-		padding: 5px 10px;
-	}
+		th, td {
+			border: solid 1px $rule;
+			border: solid 1px var(--color-rule);
+			padding: 5px 10px;
+		}
 
-	table th {
-		background-color: $main-light;
-		background-color: var(--color-main-light);
-		color: $main-clip;
-		color: var(--color-main-clip);
+		th {
+			background-color: $main-light;
+			background-color: var(--color-main-light);
+			color: $main-clip;
+			color: var(--color-main-clip);
+		}
 	}
 
 	.figure {
