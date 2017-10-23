@@ -205,6 +205,10 @@
 	.synComment { color: $code-comment; color: var(--color-code-comment); }
 	.synSpecial { color: $code-special; color: var(--color-code-special); }
 
+	.gist {
+		.blob-num { border: none }
+	}
+
 	.hatena-asin-detail {
 		li { }
 	}
