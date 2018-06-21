@@ -71,41 +71,30 @@
 	margin: 10px auto;
 
 	.breadcrumb {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 20px;
+		margin: 20px 0;
+		color: $main-clip;
+		color: var(--color-main-clip);
+		border-radius: 0.5em;
+		background-color: $main;
+		background-color: var(--color-main);
 		font-weight: bold;
-		margin: 10px 0;
+	}
+
+	.breadcrumb-inner {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	.breadcrumb-link, .breadcrumb-child {
-		@extend %button;
-		box-sizing: border-box;
-		margin: 5px 5px;
-		padding: 5px 20px;
-
-		[itemprop='url'] {
-			display: table-cell;
-		}
-
-		[itemprop='title'] {
-			display: table-cell;
-			min-width: 150px;
-			max-width: 450px;
-			height: 1.5em;
-			vertical-align: middle;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
-
-		&::before {
-			transform: skewX(30deg);
-		}
-
-		&:last-child {
-			@extend %button:active;
-
-			&:hover {
-				transform: none;
-			}
+		&:not(:first-child)::before {
+			@include blogicon($blogicon-chevron-right);
+			margin: 0 0.5em;
+			font-size: 80%;
+			font-weight: normal;
 		}
 	}
 	
