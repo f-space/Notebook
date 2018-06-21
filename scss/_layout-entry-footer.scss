@@ -71,6 +71,6 @@
 
 .leave-comment-title {
 	@extend .btn;
-	display: table;
-	margin: 0 1em 0 auto;
+	display: block;
+	margin: 10px 0;
 }
