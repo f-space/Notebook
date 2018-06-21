@@ -1,22 +1,5 @@
 /* Font Settings */
 
-@font-face {
-	font-family: "Yu Gothic";
-	src: local("Yu Gothic Medium");
-	font-weight: normal;
-}
+$default-font: "Verdana", "YuGothic", "Yu Gothic", sans-serif;
 
-@font-face {
-	font-family: "Yu Gothic";
-	src: local("Yu Gothic Bold");
-	font-weight: bold;
-}
-
-$default-font: 
-	'Helvetica Neue', 'Helvetica', 'Arial',
-	'Hiragino Kaku Gothic Pro', 'Yu Gothic', 'Meiryo', 'MS PGothic',
-	sans-serif;
-
-$monospaced-font:
-	'Monaco', 'Consolas', 'Courier New', 'Courier',
-	monospace, sans-serif;
+$monospaced-font: "Consolas", "Courier New", "Courier", monospace;
