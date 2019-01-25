@@ -26,10 +26,11 @@ $highlight-g: green($main-light);
 $highlight-b: blue($main-light);
 
 $background: #4c4c4c;
+$background-clip: light-color($background, 10, 10%, 50%);
 $background-content: #ffffff;
 $border: $text;
 
-$title: light-color($background, 10, 10%, 50%);
+$title: $background-clip;
 $description: $title;
 $footer: $description;
 

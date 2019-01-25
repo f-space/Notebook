@@ -68,18 +68,11 @@
 }
 
 #top-box {
-	margin: 10px auto;
-
 	.breadcrumb {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 5px 20px;
-		margin: 20px 0;
-		color: $main-clip;
-		color: var(--color-main-clip);
-		border-radius: 0.5em;
-		background-color: $main;
-		background-color: var(--color-main);
+		margin: 0.5em 1em;
+		color: $background-clip;
+		color: var(--color-background-clip);
+		font-size: 90%;
 		font-weight: bold;
 	}
 
