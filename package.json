@@ -4,7 +4,7 @@
 	"description": "",
 	"scripts": {
 		"start": "node server.js",
-		"build": "node-sass theme.scss theme.css --output-style compressed"
+		"build": "node-sass src/theme.scss dst/theme.css --output-style compressed"
 	},
 	"keywords": [],
 	"author": "F_",
