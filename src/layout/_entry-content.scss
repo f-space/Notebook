@@ -1,3 +1,19 @@
+.entry {
+	box-sizing: border-box;
+	margin-bottom: $entry-spacing;
+	padding: $entry-padding;
+	border: solid $entry-border-width $border;
+	border: solid var(--border-width-entry) var(--color-border);
+	border-radius: $entry-border-radius;
+	background-color: $background-content;
+	background-color: var(--color-content);
+	background-clip: padding-box;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
 .entry-content {
 	padding-bottom: 10px;
 	border-bottom: dashed 3px $main;

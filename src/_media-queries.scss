@@ -13,11 +13,12 @@
 
 	#main {
 		float: none;
+		width: auto;
 	}
 
 	#box2 {
 		float: none;
-		width: 100%;
+		width: auto;
 		margin-top: $entry-spacing;
 	}
 
@@ -44,21 +45,22 @@
 
 @media (max-width: $entry-width) {
 
+	:root {
+		font-size: 90%;
+	}
+	
 	#globalheader-container {
 		position: static;
 	}
 
 	#container {
-		width: 100%;
-		padding: 0 10px;
+		width: auto;
+		padding-top: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
-	.entry {
-		width: 100%;
-		font-size: 90%;
-	}
-
-	#blog-title {
+	@at-root {
 		$scale: 0.5;
 
 		#blog-title-inner {

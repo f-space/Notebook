@@ -13,7 +13,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	right: 0;
 	background-color: $globalheader-background;
 	background-color: var(--color-globalheader-background);
 	color: $globalheader-color;
@@ -21,7 +21,6 @@
 }
 
 #container {
-	box-sizing: border-box;
 	width: $container-width;
 	margin: $container-margin;
 	padding-top: $globalheader-height;
@@ -37,27 +36,7 @@
 
 #main {
 	float: left;
-	margin: 0;
-	padding: 0;
-	border: none;
-	background: none;
-}
-
-.entry {
-	box-sizing: border-box;
 	width: $entry-width;
-	margin-bottom: $entry-spacing;
-	padding: $entry-padding;
-	border: solid $entry-border-width $border;
-	border: solid var(--border-width-entry) var(--color-border);
-	border-radius: $entry-border-radius;
-	background-color: $background-content;
-	background-color: var(--color-content);
-	background-clip: padding-box;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
 }
 
 #box2 {
@@ -71,4 +50,12 @@
 	background-color: $background-content;
 	background-color: var(--color-content);
 	background-clip: padding-box;
+}
+
+#footer {
+	padding: 20px 0;
+	font-size: 80%;
+	text-align: center;
+	color: $footer;
+	color: var(--color-footer);
 }
