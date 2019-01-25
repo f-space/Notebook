@@ -11,6 +11,6 @@
 	"license": "MIT",
 	"devDependencies": {
 		"express": "^4.16.4",
-		"node-sass": "^4.9.3"
+		"node-sass": "^4.11.0"
 	}
 }
