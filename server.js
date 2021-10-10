@@ -1,5 +1,15 @@
-const express = require('express');
+const fastify = require("fastify")();
+const path = require("path");
 
-const app = express();
-app.use(express.static("dst"));
-app.listen(8080);
+fastify.register(require("fastify-static"), {
+	root: path.join(__dirname, "dst"),
+});
+
+fastify.listen(8080, (err, address) => {
+	if (err) {
+		fastify.log.error(err);
+		process.exit(1);
+	}
+	
+	console.log(`listening on ${address}`);
+});
